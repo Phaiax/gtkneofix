@@ -44,7 +44,7 @@ LT_INIT([dlopen win32-dll disable-static])
 
 ### GTK (optional) ####
 
-AC_ARG_WITH([gtk], [AS_HELP_STRING([--with-gtk=2|3], [GTK+ version [default=3]])], [], [with_gtk=3])
+AC_ARG_WITH([gtk], [AS_HELP_STRING([--with-gtk=2|3], [GTK+ version [default=2]])], [], [with_gtk=2])
 AC_ARG_WITH([gtk-libdir], [AS_HELP_STRING([--with-gtk-libdir=DIR], [GTK+ library directory [default=`pkg-config --variable=libdir gtk+-3.0`]])], [], [with_gtk_libdir=`pkg-config --variable=libdir gtk+-\$with_gtk.0`])
 AC_ARG_WITH([gtk-module-dir], [AS_HELP_STRING([--with-gtk-module-dir=DIR], [GTK+ module directory [default=`pkg-config --variable=libdir gtk+-3.0`/gtk-3.0/modules]])], [], [with_gtk_module_dir=$with_gtk_libdir/gtk-$with_gtk.0/modules])
 

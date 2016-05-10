@@ -1,0 +1,16 @@
+
+config.h*
+config.status
+stamp-h1
+*~
+Makefile
+Makefile.in
+configure
+libtool
+gtktestapp
+libgtkneofix-gtk-module.la
+.deps
+.libs
+*.cache
+build-aux
+aclocal.m4

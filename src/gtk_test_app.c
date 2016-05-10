@@ -14,7 +14,11 @@
 static void hello( GtkWidget *widget,
                    gpointer   data )
 {
-    g_print ("Hello World\n");
+#ifdef GTK3
+    g_print ("Hello GTK3\n");
+#else
+    g_print ("Hello GTK2\n");
+#endif
 }
 
 static gboolean delete_event( GtkWidget *widget,
