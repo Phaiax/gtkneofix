@@ -54,10 +54,6 @@ Optionally
 
 ```
 
-```
-Exec=/opt/sublime_text/sublime_text ****KEEP****
-```
-
 `make install` only creates these files (the final directory may differ between distributions)
 ```
 └── usr
