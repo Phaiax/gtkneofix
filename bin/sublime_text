@@ -1,0 +1,2 @@
+#!/bin/sh
+env GTK_MODULES=gtkneofix-gtk-module:$GTK_MODULES /opt/sublime_text/sublime_text "$@"
