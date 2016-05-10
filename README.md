@@ -55,9 +55,25 @@ Dev Notes
 It took some effort for me to find this method of fixing the problem, since I knew nothing about how keys were handled and nothing about GTK :D
 
 
-This app can be used to test the keys.
+### The Problem
 
-./gtktestapp --gtk-module $PWD/.libs/libgtkneofix-gtk-module.so
+Sublime interprets the `hardware_keycode` and not the `keyval` as it should.
+
+### The Solution
+
+Hook a key event handler and change the hardware_keycode of the incomming event to the hardware_keycode of the 'real' key if the corresponding layer 4 key was pressed.
+
+### Dear sublime
+
+please just test for the event->keyval and not event->hardware_keycode.
+
+### Testing
+
+`gtktestapp` can be used to test the keys:
+`./gtktestapp --gtk-module $PWD/.libs/libgtkneofix-gtk-module.so`
+
+Sublime can also be started with the `--gtk-module` argument, but this opens the .so file in the editor.
+`sublime_text --gtk-module $PWD/.libs/libgtkneofix-gtk-module.so -w`
 
 
 Interesting pieces of code
