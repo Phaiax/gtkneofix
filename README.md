@@ -1,5 +1,5 @@
 
-SUBLIME NEO LAYOUT FIX
+Sublime NEO layout fix
 ======================
 
 This is a gtk plugin that fixes [a problem](https://forum.sublimetext.com/t/neo-keyboard-layout-not-full-supported/4477/13) with the fourth layer of the NEO 2 keyboard layout with sublime. Sublime ignores the layer 4 mapped keys like Left, Right, Backspace, Enter, ... that can be accessed via MOD4 + S,F,W,V, ...
@@ -16,13 +16,12 @@ Debugging: If something does not work as expected, start sublime with `-w`. See 
 Installation
 ------------
 
-Needed tools and compilers:
+Needed tools, libraries and compilers (If I forgot something, please issue a ticket):
 ```
     sudo apt-get install autoconf build-essential libgtk2.0-dev
 ```
-(If I forgot something, please issue a ticket)
 
-Install
+Then execute these commands
 ```
     git clone https://github.com/Phaiax/gtkneofix.git
     cd gtkneofix
@@ -34,7 +33,7 @@ Install
     sudo make uninstall
 ```
 
-make install only creates these files (the final directory may differ between distributions)
+`make install` only creates these files (the final directory may differ between distributions)
 ```
 └── usr
     └── lib
@@ -50,8 +49,8 @@ make install only creates these files (the final directory may differ between di
 Note: Even if the configure script allows to set --with-gtk=3, it may not work for GTK3 apps. (Sublime uses GTK2)
 
 
-Developing Notes
-----------------
+Dev Notes
+---------
 
 It took some effort for me to find this method of fixing the problem, since I knew nothing about how keys were handled and nothing about GTK :D
 
