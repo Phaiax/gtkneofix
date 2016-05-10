@@ -15,3 +15,5 @@ libgtkneofix-gtk-module.la
 build-aux
 aclocal.m4
 .dirstamp
+*.d
+*.lo
