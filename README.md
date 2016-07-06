@@ -18,7 +18,7 @@ Installation
 
 Needed tools, libraries and compilers (If I forgot something, please issue a ticket):
 ```
-    sudo apt-get install autoconf build-essential libgtk2.0-dev
+    sudo apt-get install autoconf build-essential libgtk2.0-dev git libtool automake
 ```
 
 Then execute these commands
