@@ -80,63 +80,76 @@ NEO at LEVEL MOD4
 */
 
     if (event->state >= 32) { // MOD4
-        event->state -= 32; // remove MOD4
 
         // Right
         if(event->keyval == 65363 && event->hardware_keycode == 41) {
             event->hardware_keycode = 114;
+            event->state -= 32; // remove MOD4
         }
         // Left
         else if(event->keyval == 65361 && event->hardware_keycode == 39) {
             event->hardware_keycode = 113;
+            event->state -= 32;
         }
         // Up
         else if(event->keyval == 65362 && event->hardware_keycode == 26) {
             event->hardware_keycode = 111;
+            event->state -= 32;
         }
         // Down
         else if(event->keyval == 65364 && event->hardware_keycode == 40) {
             event->hardware_keycode = 116;
+            event->state -= 32;
         }
         // Backspace
         else if(event->keyval == 65288 && event->hardware_keycode == 25) {
             event->hardware_keycode = 22;
+            event->state -= 32;
         }
         // Enter
         else if(event->keyval == 65293 && event->hardware_keycode == 55) {
             event->hardware_keycode = 36;
+            event->state -= 32;
         }
         // Delete
         else if(event->keyval == 65535 && event->hardware_keycode == 27) {
             event->hardware_keycode = 119;
+            event->state -= 32;
         }
         // Pos1
         else if(event->keyval == 65360 && event->hardware_keycode == 38) {
             event->hardware_keycode = 110;
+            event->state -= 32;
         }
         // PageUp
         else if(event->keyval == 65365 && event->hardware_keycode == 24) {
             event->hardware_keycode = 112;
+            event->state -= 32;
         }
         // PageDown
         else if(event->keyval == 65366 && event->hardware_keycode == 28) {
             event->hardware_keycode = 117;
+            event->state -= 32;
         }
         // End
         else if(event->keyval == 65367 && event->hardware_keycode == 42) {
             event->hardware_keycode = 115;
+            event->state -= 32;
         }
         // Tab
         else if(event->keyval == 65289 && event->hardware_keycode == 53) {
             event->hardware_keycode = 23;
+            event->state -= 32;
         }
         // Esc
         else if(event->keyval == 65307 && event->hardware_keycode == 52) {
             event->hardware_keycode = 9;
+            event->state -= 32;
         }
         // Ins
         else if(event->keyval == 65379 && event->hardware_keycode == 54) {
             event->hardware_keycode = 118;
+            event->state -= 32;
         }
     }
 }
